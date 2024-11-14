@@ -3,10 +3,47 @@
 *{
     margin: 0;
     padding: 0;
-
-
-
 }
+
+/* страница входа*/
+
+#enter-body {
+    background-color: #f5f5f5;
+}
+#entreregtitle {
+    text-align: center;
+    font-size: 35px;
+    line-height: 150px;
+}
+#enter-box {
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 5px 5px 1px #a9a9a9
+}
+.input-enter{
+    width: 275px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f0efef;
+    border-radius: 5px;
+}
+.input-enter:first-of-type {
+    margin-top: 70px;
+}
+.link-to-main{
+    text-decoration:none;
+}
+
+/* основная страница*/
 
 .poppins-extralight {
     font-family: "Poppins", sans-serif;

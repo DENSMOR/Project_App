@@ -1,14 +1,17 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
- <head>
-    <meta charset="UTF-8">
-    <title>Пример веб-страницы</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/Main.css') }}">
-    <button type="button"><a href="http://192.168.1.4:8000/Main">Вход</a></button>
+    <head>
+        <meta charset="utf-8">
+        <title>Страница входа</title>
+        <link rel="stylesheet" href="../static/css/Main.css">
+    </head>
+    <body id="enter-body">
+        <div id="enter-box">
+            <p id="entreregtitle"><b>Вход</b></p>
+            <input class="input-enter" type="text" placeholder="Введите логин" maxlength="50">
+            <input class="input-enter" type="password" placeholder="Введите пароль" maxlength="16">
+            <button id="button-to-main" onclick><a class="link-to-main" href="../templates/Main.html">войти</button>
+        </div>
 
-
-
- </head>
- <body>
-
- </body>
+    </body>
+<html>

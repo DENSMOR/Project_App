@@ -1,19 +1,43 @@
-{% extends "base.html" %}
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Пример веб-страницы</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Main.css') }}">
+    <li id="settings" class="setting-icon-item">
+        <button type="button" class ="Nav-Setting-Profile">
+            <span id="setting-icon" class="Nav-Setting-menu-item">
+                <li class="list">
+                    <ul>
+                        <li>Profile</li>
+                        <li>Help</li>
+                        <li>Logout</li>
 
-{%block title%}
-    Главная страница
-{% endblock %}
+                    </ul>
 
-{% block body %}
-    <h1>Чекиаут гайс</h1>
+                </li>
+            </span>
 
-{% endblock %}
 
-{% block div %}
+        </button>
+    </li>
 
-        <div class="sidebar">
-            <div class="sidebar-link"></div>
-            <div class="sidebar-link"></div>
-            <div class="sidebar-link"></div>
-            <div class="sidebar-link"></div>
-{% endblock %}
+
+
+ </head>
+ <body>
+    <div id="header">
+        <li id="Block">
+            <ul>
+                <li>Оформить сделку</li>
+                <li>История сделок</li>
+                <li>Просмотр начисленной премии</li>
+                <li>Денис гей</li>
+
+            </ul>
+
+        </li>
+    </div>
+ </body>
+</html>
+

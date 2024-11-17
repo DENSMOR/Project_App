@@ -52,65 +52,93 @@
   }
 
 body {
-    background-color: #827ba9;
+    background-color: #d8d4dc;
 
 }
 
-.header {
-    width: 90%;
-    height: 120px;
-    border-bottom: 2px solid pink;
+.nav-buttons {
+    width: 18%;
+    height: 1100px;
     background: #ccc;
-    background-position: center;
-    position: relative;
+    position: absolute;
 }
 
-#logo {
+.Top-bar {
+    width: 100%;
+    height: 140px;
+    background: #ccc;
+    
+
+
+}
+
+.logo {
     width: 5%;
-    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.Menu-logo {
+    width: 100%;
+    height: 100px;
+    
+}
+
+.menu-button {
+    
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+}
+
+
+.category-button {
+    display: flex;
+    gap: 12px;
+
 
 }
 
 
 
-.setting-icon-item {
-    list-style: none;
 
-
+.category-button  {
+   border: none;
+   cursor: pointer;
+   font-size: 15px;
+   width: 290px;
+   font-weight: 500;
+   white-space: nowrap;
+   padding: 23px 40px;
+   margin-top: 50px;
+   border-radius: 20px;
+   margin-bottom: 60px;
+   margin-left: 26px;
+   box-shadow: 0 5px 5px 1px #a9a9a9;
 }
 
-
-
-#Block {
-    list-style: none;
-    display: block;
-    float: left;
-    width: 40%;
-    height: 20%;
-    margin-left: 25%;
-    margin-top:35px;
-}
-
-#Block li {
-    display: inline;
-    background: #fafafa;
-    border: 1px solid silver;
-    padding: 0 20px;
-    cursor: pointer;
-}
-
-#Block li:hover {
+.category-button:hover {
     color: white;
     background: #333;
-    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 1px #a9a9a9
+}
 
-
-
+.Block-deal {
+    display: flex;
+    width: 50%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ccc;
 
 }
 
-#Block li:not(:last-of-type){
-    margin-right: 20px;
+.form-deal {
+    
 
 
 }

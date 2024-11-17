@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <title>Пример веб-страницы</title>
     <link rel="stylesheet" href="../static/css/Main.css">
-    
+        <div class="Top-bar">
+            <a href="Main.html"><img src=../images/serafimi.jpg class="logo"></a>
+            <button class="menu-button"><a href="Main.html"><img src=../images/menu.jpg class="Menu-logo"></a></button>
+        </div>
 
 
  </head>
  <body>
-    <section class="header">
-        <nav>
-            <a href="Main.html"><img src=../images/serafimi.jpg id="logo"></a>
-            <div class="nav-links">
-                    <ul id="Block">
-                        <li>Оформить сделку</li>
-                        <li>История сделок</li>
-                        <li>Просмотр начисленной премии</li>
-                        <li>Денис гей</li>
-
-                    </ul>
+            <div class="nav-buttons">
+                <button class="category-button">Оформить сделку</button>
+                <button class="category-button">История сделок</button>
+                <button class="category-button">Просмотр начисленной премии</button>
+                <button class="category-button">Денис гей</button>
             </div>
-        </nav>
-    </section>
+            <div class="Block-deal">
+                <form action="http://denisGay.com" method="get">
+                    <div class="form-deal">
+                    <label for="number">id клиента: </label>
+                    <input type="number" name="id" maxlength="10"/><br><br>
+                    </div>
+                    <div class="form-deal">
+                    <label for="number">Сумма сделки: </label>
+                    <input type="number" name="Sum"/><br><br>
+                    </div>
+                    <div class="form-deal">
+                        <label for="text">Адрес сделки: </label>
+                        <input type="text" name="Adress"/><br><br>
+                    </div>
+                    <div class="form-deal">
+                        <label for="number">Дата заключения договора: </label>
+                        <input type="number" name="Data"/><br><br>
+                    </div>
+                    <div class="form-deal">
+                    <input type="submit" value="Сохранить сделку" />
+                    </div>
+                </form>
+            </div>
 </body>
 </html>
-

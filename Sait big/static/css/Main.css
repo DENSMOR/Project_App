@@ -56,9 +56,12 @@ body {
 
 }
 
+
+
+
 .nav-buttons {
     width: 18%;
-    height: 1100px;
+    height: 870px;
     background: #ccc;
     position: absolute;
 }
@@ -109,7 +112,7 @@ body {
    border: none;
    cursor: pointer;
    font-size: 15px;
-   width: 290px;
+   width: 85%;
    font-weight: 500;
    white-space: nowrap;
    padding: 23px 40px;
@@ -129,16 +132,18 @@ body {
 
 .Block-deal {
     display: flex;
-    width: 50%;
-    margin-top: 70px;
-    margin-left: auto;
+    width: 60%;
+    height: 700px;
+    margin-top: 50px;
+    margin-left: 385px;
     margin-right: auto;
     background-color: #ccc;
-
+    border-radius: 30px;
 }
 
 .form-deal {
-    
-
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 17px;
 
 }

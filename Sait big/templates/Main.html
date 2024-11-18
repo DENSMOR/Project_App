@@ -12,6 +12,7 @@
 
  </head>
  <body>
+        
             <div class="nav-buttons">
                 <button class="category-button">Оформить сделку</button>
                 <button class="category-button">История сделок</button>
@@ -19,27 +20,33 @@
                 <button class="category-button">Денис гей</button>
             </div>
             <div class="Block-deal">
-                <form action="http://denisGay.com" method="get">
+                <form action="http://denisGay.com" method="post">
                     <div class="form-deal">
-                    <label for="number">id клиента: </label>
-                    <input type="number" name="id" maxlength="10"/><br><br>
+                    <label for="text">id клиента: </label>
+                    <input type="text" name="id" maxlength="10"/><br><br>
                     </div>
                     <div class="form-deal">
-                    <label for="number">Сумма сделки: </label>
-                    <input type="number" name="Sum"/><br><br>
+                    <label for="text">Сумма сделки: </label>
+                    <input type="text" name="Sum"/><br><br>
                     </div>
                     <div class="form-deal">
                         <label for="text">Адрес сделки: </label>
                         <input type="text" name="Adress"/><br><br>
                     </div>
                     <div class="form-deal">
-                        <label for="number">Дата заключения договора: </label>
-                        <input type="number" name="Data"/><br><br>
+                        <label for="text">Дата заключения договора: </label>
+                        <input type="text" name="Data"/><br><br>
                     </div>
-                    <div class="form-deal">
+                    <div class="form-dop">
+                        <label for="text">Дополнительная информация: </label>
+                        <input type="text" name="info"/><br><br>
+                    </div>
+                    <div class="form-save">
                     <input type="submit" value="Сохранить сделку" />
                     </div>
+                    
                 </form>
             </div>
+        
 </body>
 </html>

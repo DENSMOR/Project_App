@@ -53,15 +53,16 @@
 
 body {
     background-color: #d8d4dc;
-
+    max-height: 800px;
+    
 }
 
 
 
 
 .nav-buttons {
-    width: 18%;
-    height: 870px;
+    width: 350px;
+    height: 800px;
     background: #ccc;
     position: absolute;
 }
@@ -112,7 +113,7 @@ body {
    border: none;
    cursor: pointer;
    font-size: 15px;
-   width: 85%;
+   width: 300px;
    font-weight: 500;
    white-space: nowrap;
    padding: 23px 40px;
@@ -139,6 +140,8 @@ body {
     margin-right: auto;
     background-color: #ccc;
     border-radius: 30px;
+    padding: 25px 30px;
+    
 }
 
 .form-deal {

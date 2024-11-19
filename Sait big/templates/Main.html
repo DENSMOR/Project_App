@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Пример веб-страницы</title>
     <link rel="stylesheet" href="../static/css/Main.css">
-        <div class="Top-bar">
-            <a href="Main.html"><img src=../images/serafimi.jpg class="logo"></a>
-            <button class="menu-button"><a href="Main.html"><img src=../images/menu.jpg class="Menu-logo"></a></button>
-        </div>
 
 
  </head>
  <body>
+            <div class="Top-bar">
+                <a href="Main.html"><img src=../images/serafimi.jpg class="logo"></a>
+                <button class="menu-button"><a href="Main.html"><img src=../images/menu.jpg class="Menu-logo"></a></button>
+            </div>
         
             <div class="nav-buttons">
                 <button class="category-button">Оформить сделку</button>
@@ -22,29 +22,45 @@
             <div class="Block-deal">
                 <form action="http://denisGay.com" method="post">
                     <div class="form-deal">
-                    <label for="text">id клиента: </label>
-                    <input type="text" name="id" maxlength="10"/><br><br>
+                        <span for="text">id клиента: </span>
+                        <input type="text" placeholder="Ввеите id клиента" name="id" maxlength="10"/>
                     </div>
                     <div class="form-deal">
-                    <label for="text">Сумма сделки: </label>
-                    <input type="text" name="Sum"/><br><br>
+                        <span for="text">Сумма сделки: </span>
+                        <input type="text" placeholder="Ввеите сумму сделки"name="Sum"/>
                     </div>
                     <div class="form-deal">
-                        <label for="text">Адрес сделки: </label>
-                        <input type="text" name="Adress"/><br><br>
+                        <span class="details">Адрес сделки: </span>
+                        <input type="text" placeholder="Ввеите адрес сделки" name="Adress"/>
                     </div>
                     <div class="form-deal">
-                        <label for="text">Дата заключения договора: </label>
-                        <input type="text" name="Data"/><br><br>
+                        <span class="details">Дата заключения договора: </span>
+                        <input type="text" placeholder="Ввеите дату заключения сделки" name="Data"/>
                     </div>
                     <div class="form-dop">
-                        <label for="text">Дополнительная информация: </label>
-                        <input type="text" name="info"/><br><br>
+                        <span class="details">Дополнительная информация: </span>
+                        <input type="text" name="info"/>
                     </div>
-                    <div class="form-save">
-                    <input type="submit" value="Сохранить сделку" />
+                        <div class="form-save">
+                        <input type="submit" value="Сохранить сделку" />
                     </div>
-                    
+                    <div class="Type-details">
+                        <span class="Type-title">Тип сделки<span>
+                        <div class="category">
+                            <label for="">
+                                <span class="dot one"></span>
+                                <span class="type">Договор найма</span>
+                            </label>
+                            <label for="">
+                                <span class="dot-two"></span>
+                                <span class="type">Договор покупки</span>
+                            </label>
+                            <label for="">
+                                <span class="dot-three"></span>
+                                <span class="type">Договор аренды</span>
+                            </label>
+                        </div>
+                    </div>
                 </form>
             </div>
         

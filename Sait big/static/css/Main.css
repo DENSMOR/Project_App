@@ -133,52 +133,56 @@ body {
 
 .Block-deal {
     display: flex;
-    width: 1000px;
+    width: 1200px;
     height: 550px;
-    margin-top: 50px;
+    margin-top: 32px;
     margin-left: 385px;
-    margin-right: auto;
+
     background-color: #ccc;
     border-radius: 30px;
     padding: 25px 30px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
-.form-deal {
+.form-deal{
+    
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% /2 - 20px);
+    width: calc(70% /2 - 20px);
     margin-left: 50px;
+    margin-bottom: 10px;
+    
 }
+
+
 
 .Block-deal .form-deal input {
     height: 40px;
-    width: 200px;
+    width: 220px;
     margin: 10px 0 12px 0;
     border-radius: 5px;
-    border: 1px #ccc;
+    outline: none;
+    border: 1px solid #ccc;
     margin-left: 7px;
     border-bottom-width: 20px;
     transition: all 0.3s ease;
+    border-bottom-width: 2px;
+    padding-left: 15px;
 }
 
-.Block-deal .form-deal input:focus,
-.Block-deal .form-deal input:valid {
+.Block-deal .form-deal input:focus {
     border-color: red;
 
 
 }
 
-.Block-deal .form-deal {
-    font-size: 500;
-    margin-bottom: 5px;
-
-}
-
 .form-dop {
-    width: calc(100% /2 - 20px);
-    margin-left: 50px;
-
+    width: calc(80% /2 - 20px);
+    margin-top: -110px;
+    float: right;
+    margin-right: 170px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .Block-deal .form-dop input {
@@ -188,9 +192,90 @@ body {
     border-radius: 5px;
     border: 1px #ccc;
     margin-left: 7px;
-
-    
+    transition: all 0.3s ease;
 }
+
+.Block-deal .form-dop input:focus {
+    border-color: red;
+
+
+}
+
+form .Type-deal {
+    float: right;
+    
+    
+
+}
+
+form .Type-deal .deal-title {
+    font-size: 18px;
+    font-weight: 500;
+    
+
+}
+
+form .Type-deal .category-deal {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px 0;
+    margin-top: 5px;
+
+}
+
+form .Type-status {
+    float: right;
+    margin-top: 30px;
+}
+
+form .Type-status .status-title {
+    font-size: 18px;
+    font-weight: 500;
+    
+
+}
+
+.Type-status .category-status .dot {
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+.Type-status .category-status label {
+    display: flex;
+    align-items: center;
+}
+
+
+form .Type-status .category-status {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px 0;
+    margin-top: 5px;
+
+
+}
+ 
+.Type-deal .category-deal label {
+    display: flex;
+    align-items: center;
+}
+
+.Type-deal .category-deal .dot {
+    height: 18px;
+    width: 18px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
+
 
 
 

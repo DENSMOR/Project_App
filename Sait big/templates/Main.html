@@ -21,45 +21,64 @@
             </div>
             <div class="Block-deal">
                 <form action="http://denisGay.com" method="post">
-                    <div class="form-deal">
-                        <span for="text">id клиента: </span>
-                        <input type="text" placeholder="Ввеите id клиента" name="id" maxlength="10"/>
+                    <div class="Type-deal">
+                        <input type="radio" name="Deal-php" id="dot-1">
+                        <input type="radio" name="Deal-php" id="dot-2">
+                        <input type="radio" name="Deal-php" id="dot-3">
+                        <span class="deal-title">Тип сделки<span>
+                        <div class="category-deal">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="deal">Договор найма</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="deal">Договор покупки</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="deal">Договор аренды</span>
+                            </label>
+                        </div>
                     </div>
                     <div class="form-deal">
-                        <span for="text">Сумма сделки: </span>
-                        <input type="text" placeholder="Ввеите сумму сделки"name="Sum"/>
+                        <span class="details">id клиента: </span>
+                        <input type="text" placeholder="Введите id клиента" name="id" maxlength="10">
+                    </div>
+                    <div class="Type-status">
+                        <input type="radio" name="Deal-php" id="dot-4">
+                        <input type="radio" name="Deal-php" id="dot-5">
+                        <span class="status-title">Статус сделки<span>
+                        <div class="category-status">
+                            <label for="dot-4">
+                                <span class="dot four"></span>
+                                <span class="type-status">В процесе</span>
+                            </label>
+                            <label for="dot-5">
+                                <span class="dot five"></span>
+                                <span class="type-status">Завершена</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-deal">
+                        <span class="details">Сумма сделки: </span>
+                        <input type="text" placeholder="Введите сумму сделки"name="Sum">
                     </div>
                     <div class="form-deal">
                         <span class="details">Адрес сделки: </span>
-                        <input type="text" placeholder="Ввеите адрес сделки" name="Adress"/>
+                        <input type="text" placeholder="Введите адрес сделки" name="Adress">
                     </div>
                     <div class="form-deal">
                         <span class="details">Дата заключения договора: </span>
-                        <input type="text" placeholder="Ввеите дату заключения сделки" name="Data"/>
+                        <input type="text" placeholder="Введите дату заключения сделки" name="Data">
                     </div>
+
                     <div class="form-dop">
                         <span class="details">Дополнительная информация: </span>
                         <input type="text" name="info"/>
                     </div>
                         <div class="form-save">
                         <input type="submit" value="Сохранить сделку" />
-                    </div>
-                    <div class="Type-details">
-                        <span class="Type-title">Тип сделки<span>
-                        <div class="category">
-                            <label for="">
-                                <span class="dot one"></span>
-                                <span class="type">Договор найма</span>
-                            </label>
-                            <label for="">
-                                <span class="dot-two"></span>
-                                <span class="type">Договор покупки</span>
-                            </label>
-                            <label for="">
-                                <span class="dot-three"></span>
-                                <span class="type">Договор аренды</span>
-                            </label>
-                        </div>
                     </div>
                 </form>
             </div>

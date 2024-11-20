@@ -8,7 +8,7 @@
 /* страница входа*/
 
 #enter-body {
-    background-color: #d8d4dc;
+    background-color: #f5f5f5;
 }
 #entreregtitle {
     text-align: center;
@@ -39,8 +39,16 @@
 .input-enter:first-of-type {
     margin-top: 70px;
 }
-.link-to-main{
-    text-decoration:none;
+#button-to-main {
+    display: inline-block;
+    padding: 12px 75px;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-decoration: none;
+    color:#f0efef;
+    text-align: center;
 }
 
 /* основная страница*/
@@ -50,44 +58,32 @@
     font-weight: 200;
     font-style: normal;
   }
-
 body {
     background-color: #d8d4dc;
     max-height: 800px;
     
 }
-
-
-
-
 .nav-buttons {
     width: 350px;
-    height: 789px;
+    height: 834px;
     background: #ccc;
     float: left;
 }
-
 .Top-bar {
     width: 100%;
     height: 140px;
     background: #ccc;
-    
-
-
 }
-
 .logo {
     width: 5%;
     margin-left: 50px;
     margin-top: 10px;
 }
-
 .Menu-logo {
     width: 100%;
     height: 100px;
     
 }
-
 .menu-button {
     
     float: right;
@@ -97,53 +93,42 @@ body {
     font-size: 15px;
     border: none;
 }
-
-
 .category-button {
-    display: flex;
-    gap: 12px;
-
-
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    width: 220px;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 23px 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    margin-left: 26px;
+    box-shadow: 0 5px 5px 1px #a9a9a9;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
 }
-
-
-
-
-.category-button  {
-   border: none;
-   cursor: pointer;
-   font-size: 15px;
-   width: 300px;
-   font-weight: 500;
-   white-space: nowrap;
-   padding: 23px 40px;
-   margin-top: 50px;
-   border-radius: 20px;
-   margin-bottom: 60px;
-   margin-left: 26px;
-   box-shadow: 0 5px 5px 1px #a9a9a9;
-}
-
 .category-button:hover {
     color: white;
     background: #333;
     border-radius: 20px;
     box-shadow: 0 5px 5px 1px #a9a9a9
 }
-
 .Block-deal {
     display: flex;
-    width: 1200px;
+    width: 60%;
     height: 550px;
-    margin-top: 32px;
-    margin-left: 385px;
-
+    margin-top: 80px;
+    margin-left: 80px;
+    float: left;
     background-color: #ccc;
     border-radius: 30px;
     padding: 25px 30px;
     font-size: 15px;
 }
-
 .form-deal{
     
     display: flex;
@@ -153,9 +138,6 @@ body {
     margin-bottom: 10px;
     margin-top: 30px;
 }
-
-
-
 .Block-deal .form-deal input {
     height: 40px;
     width: 260px;
@@ -172,8 +154,6 @@ body {
 
 .Block-deal .form-deal input:focus {
     border-color: red;
-
-
 }
 
 .form-dop {
@@ -207,7 +187,6 @@ form .Type-deal {
     float: right;
     margin-right: 20px;
     margin-top: -25px;
-
 }
 
 .All-deal {
@@ -218,8 +197,6 @@ form .Type-deal {
 form .Type-deal .deal-title {
     font-size: 18px;
     font-weight: 500;
-    
-
 }
 
 form .Type-deal .category-deal {
@@ -228,7 +205,6 @@ form .Type-deal .category-deal {
     width: 500px;
     margin: 10px 0;
     margin-top: 5px;
-    
 }
 
 form .Type-status {
@@ -240,8 +216,6 @@ form .Type-status {
 form .Type-status .status-title {
     font-size: 18px;
     font-weight: 500;
-    
-
 }
 
 .Type-status .category-status .dot {
@@ -265,8 +239,6 @@ form .Type-status .category-status {
     width: 500px;
     margin: 10px 0;
     margin-top: 5px;
-
-
 }
  
 .Type-deal .category-deal label {
@@ -306,7 +278,6 @@ form .form-save input {
 
 form .form-save input:hover {
     background: aqua;
-
 }
 
 
@@ -332,8 +303,6 @@ form .form-save input:hover {
     opacity: 0;
     cursor: pointer;
   }
-  
-  
   .checkmark {
     position: absolute;
     top: 0;
@@ -372,8 +341,7 @@ form .form-save input:hover {
 
 
 
-.container-1 {
-    
+.container-1 {  
     display: block;
     position: relative;
     padding-left: 35px;
@@ -386,15 +354,11 @@ form .form-save input:hover {
     -ms-user-select: none;
     user-select: none;
   }
-  
- 
   .container-1 input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-  
- 
   .checkmark-1 {
     position: absolute;
     top: 0;
@@ -404,8 +368,6 @@ form .form-save input:hover {
     background-color: #eee;
     border-radius: 50%;
   }
-  
-  
   .container-1:hover input ~ .checkmark-1 {
     background-color: #ccc;
   }
@@ -414,20 +376,14 @@ form .form-save input:hover {
   .container-1 input:checked ~ .checkmark-1 {
     background-color: #2196F3;
   }
-  
-
   .checkmark-1:after {
     content: "";
     position: absolute;
     display: none;
   }
-  
-
   .container-1 input:checked ~ .checkmark-1:after {
     display: block;
   }
-  
-  
   .container-1 .checkmark-1:after {
        top: 9px;
       left: 9px;
@@ -436,3 +392,16 @@ form .form-save input:hover {
       border-radius: 50%;
       background: white;
   }
+/*страница истории сделок */
+#search {
+    padding: 15px;
+    border-radius: 15px;
+    width: 700px;
+    border: none;
+}
+#search-select {
+    padding: 15px;
+    border-radius: 15px;
+    width: 100px;
+    border: none;
+}

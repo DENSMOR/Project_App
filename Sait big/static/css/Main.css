@@ -59,25 +59,25 @@
     font-style: normal;
   }
 body {
-    background-color: #d8d4dc;
+    background-color: #f5f5f5;
     max-height: 800px;
     
 }
 .nav-buttons {
     width: 350px;
     height: 834px;
-    background: #ccc;
+    background:#ccc;
     float: left;
 }
 .Top-bar {
     width: 100%;
     height: 140px;
-    background: #ccc;
+    background: #be2929;
 }
 .logo {
-    width: 5%;
+    height: 75px;
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .Menu-logo {
     width: 100%;
@@ -268,7 +268,7 @@ form .form-save input {
     outline: none;
     border-radius: 5px;
     color: #ffff;
-    background: red;
+    background: #be2929;
     border: none;
     font-size: 17px;
     font-weight: 500;
@@ -277,7 +277,7 @@ form .form-save input {
 }
 
 form .form-save input:hover {
-    background: aqua;
+    background: #aa2525;
 }
 
 
@@ -313,23 +313,20 @@ form .form-save input:hover {
     border-radius: 50%;
   }
   .container:hover input ~ .checkmark {
-    background-color: aqua;
+    background-color: #949494;
   }
   
   .container input:checked ~ .checkmark {
-    background-color: red;
+    background-color: #be2929;
   }
-  
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
-  
   .container input:checked ~ .checkmark:after {
     display: block;
   }
-  
   .container .checkmark:after {
        top: 9px;
       left: 9px;
@@ -338,15 +335,11 @@ form .form-save input:hover {
       border-radius: 50%;
       background: white;
   }
-
-
-
 .container-1 {  
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
-    
     cursor: pointer;
     font-size: 17px;
     -webkit-user-select: none;
@@ -369,12 +362,10 @@ form .form-save input:hover {
     border-radius: 50%;
   }
   .container-1:hover input ~ .checkmark-1 {
-    background-color: #ccc;
+    background-color: #949494;
   }
-  
-  
   .container-1 input:checked ~ .checkmark-1 {
-    background-color: #2196F3;
+    background-color: #be2929;
   }
   .checkmark-1:after {
     content: "";
@@ -392,7 +383,9 @@ form .form-save input:hover {
       border-radius: 50%;
       background: white;
   }
+
 /*страница истории сделок */
+
 #search {
     padding: 15px;
     border-radius: 15px;

@@ -149,22 +149,22 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: calc(70% /2 - 20px);
-    margin-left: 50px;
-    margin-bottom: 10px;
     
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 
 
 .Block-deal .form-deal input {
     height: 40px;
-    width: 220px;
+    width: 260px;
     margin: 10px 0 12px 0;
     border-radius: 5px;
     outline: none;
     border: 1px solid #ccc;
     margin-left: 7px;
-    border-bottom-width: 20px;
+    
     transition: all 0.3s ease;
     border-bottom-width: 2px;
     padding-left: 15px;
@@ -178,33 +178,40 @@ body {
 
 .form-dop {
     width: calc(80% /2 - 20px);
-    margin-top: -110px;
+    margin-top: -160px;
     float: right;
-    margin-right: 170px;
+    
     font-size: 17px;
     font-weight: 500;
 }
 
 .Block-deal .form-dop input {
-    height: 30px;
+    height: 40px;
     width: 330px;
     margin: 10px 0 12px 0;
     border-radius: 5px;
+    padding-left: 10px;
     border: 1px #ccc;
     margin-left: 7px;
+    border-bottom-width: 2px;
     transition: all 0.3s ease;
 }
 
-.Block-deal .form-dop input:focus {
-    border-color: red;
+form .form-dop input:focus {
+    border: red;
 
 
 }
 
 form .Type-deal {
     float: right;
-    
-    
+    margin-right: 20px;
+    margin-top: -25px;
+
+}
+
+.All-deal {
+    margin-left: 130px;
 
 }
 
@@ -221,12 +228,13 @@ form .Type-deal .category-deal {
     width: 500px;
     margin: 10px 0;
     margin-top: 5px;
-
+    
 }
 
 form .Type-status {
     float: right;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-right: 80px;
 }
 
 form .Type-status .status-title {
@@ -275,8 +283,156 @@ form .Type-status .category-status {
     border: 5px solid transparent;
 }
 
+form .form-save {
+    height: 45px;
+    margin: 45px 0;
+    margin-left: 140px;
+   
+}
+
+form .form-save input {
+    height: 50px;
+    width: 450px;
+    outline: none;
+    border-radius: 5px;
+    color: #ffff;
+    background: red;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+form .form-save input:hover {
+    background: aqua;
+
+}
 
 
 
 
 
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+ 
+  .container input {
+    
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: aqua;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: red;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+
+.container-1 {
+    
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+ 
+  .container-1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+ 
+  .checkmark-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  
+  .container-1:hover input ~ .checkmark-1 {
+    background-color: #ccc;
+  }
+  
+  
+  .container-1 input:checked ~ .checkmark-1 {
+    background-color: #2196F3;
+  }
+  
+
+  .checkmark-1:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+  .container-1 input:checked ~ .checkmark-1:after {
+    display: block;
+  }
+  
+  
+  .container-1 .checkmark-1:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }

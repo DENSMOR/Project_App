@@ -20,68 +20,59 @@
                 <button class="category-button">Денис гей</button>
             </div>
             <div class="Block-deal">
-                <form action="http://denisGay.com" method="post">
-                    <div class="Type-deal">
-                        <input type="radio" name="Deal-php" id="dot-1">
-                        <input type="radio" name="Deal-php" id="dot-2">
-                        <input type="radio" name="Deal-php" id="dot-3">
-                        <span class="deal-title">Тип сделки<span>
-                        <div class="category-deal">
-                            <label for="dot-1">
-                                <span class="dot one"></span>
-                                <span class="deal">Договор найма</span>
+                <div class="All-deal">
+                    <form action="http://denisGay.com" method="post">
+                        <div class="Type-deal"> 
+                            <span class="deal-title">Тип сделки<span>
+                            <label class="container">Договор найма
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
                             </label>
-                            <label for="dot-2">
-                                <span class="dot two"></span>
-                                <span class="deal">Договор покупки</span>
+                            <label class="container">Договор покупки
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
                             </label>
-                            <label for="dot-3">
-                                <span class="dot three"></span>
-                                <span class="deal">Договор аренды</span>
+                            <label class="container">Договор аренды
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
                             </label>
                         </div>
-                    </div>
-                    <div class="form-deal">
-                        <span class="details">id клиента: </span>
-                        <input type="text" placeholder="Введите id клиента" name="id" maxlength="10">
-                    </div>
-                    <div class="Type-status">
-                        <input type="radio" name="Deal-php" id="dot-4">
-                        <input type="radio" name="Deal-php" id="dot-5">
-                        <span class="status-title">Статус сделки<span>
-                        <div class="category-status">
-                            <label for="dot-4">
-                                <span class="dot four"></span>
-                                <span class="type-status">В процесе</span>
+                        <div class="form-deal">
+                            <span class="details">id клиента: </span>
+                            <input type="text" placeholder="Введите id клиента" name="id" maxlength="10">
+                        </div>
+                        <div class="Type-status">
+                            <span class="status-title">Статус сделки<span>
+                            <label class="container-1">В процесе
+                                <input type="radio" checked="checked" name="radio-1">
+                                <span class="checkmark-1"></span>
                             </label>
-                            <label for="dot-5">
-                                <span class="dot five"></span>
-                                <span class="type-status">Завершена</span>
+                            <label class="container-1">Завершена
+                                <input type="radio" name="radio-1">
+                                <span class="checkmark-1 "></span>
                             </label>
                         </div>
-                    </div>
-                    <div class="form-deal">
-                        <span class="details">Сумма сделки: </span>
-                        <input type="text" placeholder="Введите сумму сделки"name="Sum">
-                    </div>
-                    <div class="form-deal">
-                        <span class="details">Адрес сделки: </span>
-                        <input type="text" placeholder="Введите адрес сделки" name="Adress">
-                    </div>
-                    <div class="form-deal">
-                        <span class="details">Дата заключения договора: </span>
-                        <input type="text" placeholder="Введите дату заключения сделки" name="Data">
-                    </div>
-
-                    <div class="form-dop">
-                        <span class="details">Дополнительная информация: </span>
-                        <input type="text" name="info"/>
-                    </div>
-                        <div class="form-save">
-                        <input type="submit" value="Сохранить сделку" />
-                    </div>
-                </form>
+                        <div class="form-deal">
+                            <span class="details">Сумма сделки: </span>
+                            <input type="text" placeholder="Введите сумму сделки"name="Sum">
+                        </div>
+                        <div class="form-deal">
+                            <span class="details">Адрес сделки: </span>
+                            <input type="text" placeholder="Введите адрес сделки" name="Adress">
+                        </div>
+                        <div class="form-deal">
+                            <span class="details">Дата заключения договора: </span>
+                            <input type="text" placeholder="Введите дату заключения" name="Data">
+                        </div>
+                        <div class="form-dop">
+                            <span class="details">Дополнительная информация: </span>
+                            <input type="text" name="info"/>
+                        </div>
+                            <div class="form-save">
+                            <input type="submit" value="Сохранить сделку" />
+                        </div>
+                    </form>
+                </div>
             </div>
-        
 </body>
 </html>

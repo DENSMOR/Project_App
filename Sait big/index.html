@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <title>Пример веб-страницы</title>
-    <link rel="stylesheet" href="../static/css/Main.css">
+    <link rel="stylesheet" href="/static/css/Main.css">
 
 
  </head>
@@ -12,7 +12,7 @@
                 <a href="Main.html"><img src=../images/logored.png class="logo"></a>
             </div>
             <div class="nav-buttons">
-                <a role="button" class="category-button" href="Main.html">Оформить сделку</a>
+                <a role="button" class="category-button" href="index.html">Оформить сделку</a>
                 <a role="button" class="category-button" href="deal-history.html">История сделок</a>
                 <a role="button" class="category-button" href="look-awards.html">Просмотр начисленной премии</a>
             </div>
@@ -48,6 +48,10 @@
                                 <input type="radio" name="radio-1">
                                 <span class="checkmark-1 "></span>
                             </label>
+                            <label class="container-1">Отменена
+                                <input type="radio" name="radio-1">
+                                <span class="checkmark-1 "></span>
+                            </label>
                         </div>
                         <div class="form-deal">
                             <span class="details">Сумма сделки: </span>
@@ -63,7 +67,7 @@
                         </div>
                         <div class="form-dop">
                             <span class="details">Дополнительная информация: </span>
-                            <input type="text" name="info"/>
+                            <textarea></textarea>
                         </div>
                             <div class="form-save">
                             <input type="submit" value="Сохранить сделку" />

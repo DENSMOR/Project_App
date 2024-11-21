@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Пример веб-страницы</title>
+    <link rel="stylesheet" href="/static/css/Main.css">
+
+
+ </head>
+ <body>
+            <div class="Top-bar">
+                <a href="Main.html"><img src=../images/logored.png class="logo"></a>
+            </div>
+            <div class="nav-buttons">
+                <a role="button" class="category-button" href="giving-awards.html">Начисление премии</a>
+                <a role="button" class="category-button" href="deal-history-boss.html">История сделок</a>
+                <a role="button" class="category-button" href="rieltor-control.html">Управлени риелторами</a>
+            </div>
+            <div class="Block-deal">
+                    <form action="http://denisGay.com" method="post">
+                        <div class="scroll-table" id="scroll">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Имя</th>
+                                    <th>Стаж</th>
+                                    <th>Сумма сделки</th>
+                                    <th>Тип сделки</th>
+                                </tr>
+                                </thead>
+                            </table>
+                                <div class="scroll-table-body">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>?=$deal[0]?></td> 
+                                                <td>?=$deal[1]?></td> 
+                                                <td>?=$deal[5]?></td> 
+                                                <td>?=$deal[4]?></td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                    </form>
+            </div>
+</body>
+</html>

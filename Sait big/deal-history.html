@@ -1,0 +1,64 @@
+<?
+require_once "connect.php"
+?>
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title>Пример веб-страницы</title>
+    <link rel="stylesheet" href="../static/css/Main.css">
+
+
+ </head>
+ <body>
+        <div class="Top-bar">
+            <a href="Main.html"><img src=../images/logored.png class="logo"></a>
+        </div>
+            <div class="nav-buttons">
+                <a role="button" class="category-button" href="index.html">Оформить сделку</a>
+                <a role="button" class="category-button" href="deal-history.html">История сделок</a>
+                <a role="button" class="category-button" href="look-awards.html">Просмотр начисленной премии</a>
+            </div>
+            <div class="Block-deal">
+                <form action="" method="get">
+                    <input id="search" type="search" name="history-search" maxlength="100" placeholder="Введите запрос">
+                    <input id="search-select" type="select">
+                    <table border="1">
+                        <thead>
+                          <tr>
+                            <th>ID сделки</th>
+                            <th>Дата заключения договора</th>
+                            <th>Адрес объекта сделки</th>
+                            <th>ID клиента</th>
+                            <th>Тип сделки</th>
+                            <th>Статус сделки</th>
+                            <th>Сумма сделки</th>
+                            <th>Дополнительная информация</th>
+                          </tr>
+                        </thead>
+                       
+                        <tbody>
+                         <?
+                        $deals=mysqli_query($conn,"SELECT * FROM `deals_history`  WHERE `staff_id`=1");
+                        $deals=mysqli_fetch_all($deals);
+                        foreach($deals as $deal){
+                            ?>
+                            <tr>
+                                <td><?=$deal[0]?></td>  <!--#deal_id -->
+                                <td><?=$deal[1]?></td> <!-- #date-->
+                                <td><?=$deal[5]?></td> <!--#adres -->
+                                <td><?=$deal[4]?></td> <!--#id_client -->
+                                <td><?=$deal[2]?></td> <!--#deal_typy -->
+                                <td><?=$deal[6]?></td> <!--#deal_state -->
+                                <td><?=$deal[3]?>(₽)</td> <!--#deal_price -->
+                                <td><?=$deal[8]?></td> <!-- #info-->
+                            </tr>
+                            <?
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+</body>
+</html>

@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap');
+  
 
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 /* страница входа*/
@@ -53,15 +55,10 @@
 
 /* основная страница*/
 
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
 body {
     background-color: #f5f5f5;
     max-height: 800px;
-    
+    font-family: "Nunito";
 }
 .nav-buttons {
     width: 350px;
@@ -99,7 +96,7 @@ body {
     cursor: pointer;
     font-size: 15px;
     width: 220px;
-    font-weight: 500;
+    font-weight: 700;
     white-space: nowrap;
     padding: 23px 40px;
     margin-top: 50px;
@@ -136,7 +133,7 @@ body {
     width: calc(70% /2 - 20px);
     
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .Block-deal .form-deal input {
     height: 40px;
@@ -157,10 +154,12 @@ body {
 }
 
 .form-dop {
+    width: 100px;
+    height: 100px;
     width: calc(80% /2 - 20px);
-    margin-top: -160px;
+    margin-top: -122px;
     float: right;
-    
+    resize: none;
     font-size: 17px;
     font-weight: 500;
 }
@@ -185,8 +184,7 @@ form .form-dop input:focus {
 
 form .Type-deal {
     float: right;
-    margin-right: 20px;
-    margin-top: -25px;
+    
 }
 
 .All-deal {
@@ -209,8 +207,8 @@ form .Type-deal .category-deal {
 
 form .Type-status {
     float: right;
-    margin-top: 40px;
-    margin-right: 80px;
+    margin-top: -99px;
+    margin-right: -380px;
 }
 
 form .Type-status .status-title {
@@ -257,8 +255,8 @@ form .Type-status .category-status {
 
 form .form-save {
     height: 45px;
-    margin: 45px 0;
-    margin-left: 140px;
+    margin: 30px 0;
+    margin-left: 130px;
    
 }
 
@@ -288,9 +286,10 @@ form .form-save input:hover {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    margin-top: 7px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -339,9 +338,10 @@ form .form-save input:hover {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    margin-top: 7px;
+    margin-bottom: 14px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -397,4 +397,63 @@ form .form-save input:hover {
     border-radius: 15px;
     width: 100px;
     border: none;
+}
+.scroll-table-body {
+    height: 400px;
+    overflow-x: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+#scroll {
+    width: 80%;
+
+}
+.scroll-table {
+    margin-top: 15px;
+}
+.scroll-table table {
+    width:100%;
+    table-layout: fixed;
+    border: none;
+}
+.scroll-table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+}
+.scroll-table tbody td {
+    text-align: left;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.scroll-table tbody tr{
+    background: #f3f3f3;
+}
+/* Стили для скролла */
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+/* страница премии риэлтора*/
+
+#tbody-award {
+    height: 800px;
+    overflow-x: auto;
+    margin-top: 0px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid red;
 }

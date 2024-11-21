@@ -1,0 +1,15 @@
+<?php
+
+$servername='localhost';
+$username='cv03753_db';
+$password='normPassword1';
+$dbname='cv03753_db';
+
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+
+if(!$conn){
+    die("Ошибка подключения к БД.". mysqli_connect_error());}
+else{
+    echo"Успех";
+
+}?>

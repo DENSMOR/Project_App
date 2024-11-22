@@ -52,6 +52,18 @@
     color:#f0efef;
     text-align: center;
 }
+#button-to-admin {
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 60px;
+    color: #333;
+}
+#button-to-rieltor {
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 60px;
+    color: #333;
+}
 
 /* основная страница*/
 
@@ -76,6 +88,10 @@ body {
     height: 75px;
     margin-left: 50px;
     margin-top: 30px;
+}
+.logo-name {
+    color: white;
+    font-size: 20px;
 }
 .Menu-logo {
     width: 100%;
@@ -253,8 +269,8 @@ form .Type-status .category-status {
 
 form .form-save {
     height: 45px;
-    margin: 30px 0;
-    margin-left: 130px;
+    margin: 45px 0;
+    margin-left: 148px;
    
 }
 
@@ -404,10 +420,10 @@ form .form-save input:hover {
 }
 #scroll {
     width: 80%;
-
 }
 .scroll-table {
     margin-top: 15px;
+    
 }
 .scroll-table table {
     width:100%;

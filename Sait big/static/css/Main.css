@@ -59,6 +59,7 @@ body {
     background-color: #f5f5f5;
     max-height: 800px;
     font-family: "Nunito";
+    font-weight: 650;
 }
 .nav-buttons {
     width: 350px;
@@ -96,7 +97,6 @@ body {
     cursor: pointer;
     font-size: 15px;
     width: 220px;
-    font-weight: 700;
     white-space: nowrap;
     padding: 23px 40px;
     margin-top: 50px;
@@ -135,6 +135,9 @@ body {
     margin-bottom: 10px;
     margin-top: 20px;
 }
+textarea {
+    resize: none;
+  }
 .Block-deal .form-deal input {
     height: 40px;
     width: 260px;
@@ -157,19 +160,16 @@ body {
     width: 100px;
     height: 100px;
     width: calc(80% /2 - 20px);
-    margin-top: -122px;
+    margin-top: -215px;
+    
     float: right;
-    resize: none;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 15px;
 }
 
-.Block-deal .form-dop input {
-    height: 40px;
-    width: 330px;
+.Block-deal .form-dop textarea {
     margin: 10px 0 12px 0;
     border-radius: 5px;
-    padding-left: 10px;
+    padding: 10px 10px 10px 10px;
     border: 1px #ccc;
     margin-left: 7px;
     border-bottom-width: 2px;
@@ -184,7 +184,7 @@ form .form-dop input:focus {
 
 form .Type-deal {
     float: right;
-    
+    margin-right: 45px;
 }
 
 .All-deal {
@@ -193,8 +193,7 @@ form .Type-deal {
 }
 
 form .Type-deal .deal-title {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 17px;
 }
 
 form .Type-deal .category-deal {
@@ -212,8 +211,7 @@ form .Type-status {
 }
 
 form .Type-status .status-title {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 17px;
 }
 
 .Type-status .category-status .dot {
@@ -269,7 +267,6 @@ form .form-save input {
     background: #be2929;
     border: none;
     font-size: 17px;
-    font-weight: 500;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
@@ -448,6 +445,65 @@ form .form-save input:hover {
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
 
+/*страница истории сделок*/
+
+#search {
+    padding: 15px;
+    border-radius: 15px;
+    width: 700px;
+    border: none;
+}
+#search-select {
+    padding: 15px;
+    border-radius: 15px;
+    width: 100px;
+    border: none;
+}
+.scroll-table-body {
+    height: 400px;
+    overflow-x: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.scroll-table {
+    margin-top: 15px;
+}
+.scroll-table table {
+    width:100%;
+    table-layout: fixed;
+    border: none;
+}
+.scroll-table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+}
+.scroll-table tbody td {
+    text-align: left;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.scroll-table tbody tr{
+    background: #f3f3f3;
+}
+/* Стили для скролла */
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
 /* страница премии риэлтора*/
 
 #tbody-award {
@@ -456,4 +512,12 @@ form .form-save input:hover {
     margin-top: 0px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid red;
+}
+#award-p {
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+    cursor: default;
 }

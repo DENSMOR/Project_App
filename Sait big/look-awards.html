@@ -1,18 +1,13 @@
-<?
-require_once "connect.php"
-?>
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> 
 <html>
  <head>
     <meta charset="UTF-8">
-    <title>Пример веб-страницы</title>
-    <link rel="stylesheet" href="../static/css/Main.css">
-
-
+    <title>Просмотр начисленной премии</title>
+    <link rel="stylesheet" href="/static/css/Main.css">
  </head>
  <body>
         <div class="Top-bar">
-            <a href="Main.html"><img src=../images/logored.png class="logo"></a>
+            <a href="Main.html"><img src="/images/logored.png" class="logo"></a>
         </div>
             <div class="nav-buttons">
                 <a role="button" class="category-button" href="index.html">Оформить сделку</a>
@@ -21,33 +16,28 @@ require_once "connect.php"
             </div>
             <div class="Block-deal">
                 <form action="" method="get">
-                    
-                </form>
-           
-                <form action="" method="get">
-                    <table id="award-table">
-                        
-                    </table>
+                    <input id="award-p" type="text" readonly>
+                    <div class="scroll-table">
                         <table>
-                        <tbody id="tbody-award">
-                         <?
-                        $deals=mysqli_query($conn,"SELECT * FROM `deals_history`");
-                        $deals=mysqli_fetch_all($deals);
-                        foreach($deals as $deal){
-                            ?>
+                            <thead>
                             <tr>
-                                <td><?=$deal[0]?></td>  <!--#deal_id -->
-                                <td><?=$deal[1]?></td> <!-- #date-->
-                                <td><?=$deal[5]?></td> <!--#adres -->
-                                <td><?=$deal[2]?></td> <!--#deal_typy -->
-                                <td><?=$deal[3]?>(₽)</td> <!--#deal_price -->
+                                <th>ID сделки</th>
+                                <th>Дата заключения договора</th>
+                                <th>Адрес объекта</th>
+                                <th>Тип</th>
+                                <th>Сумма</th>
+                                <th>Премия</th>
                             </tr>
-                            <?
-                        }
-                        ?>
-                        </tbody>
-                    </table>
-                    <input id="award-p" type="text" readonly>тестовое сообщение
+                            </thead>
+                        </table>
+                            <div class="scroll-table-body">
+                                <table>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
                 </form>
             </div>
 </body>

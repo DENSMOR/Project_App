@@ -2,7 +2,7 @@
 <html>
  <head>
     <meta charset="UTF-8">
-    <title>Пример веб-страницы</title>
+    <title>Главная страница</title>
     <link rel="stylesheet" href="/static/css/Main.css">
 
 
@@ -10,34 +10,33 @@
  <body>
             <div class="Top-bar">
                 <a href="Main.html"><img src=../images/logored.png class="logo"></a>
+                <span class="logo-name">Prime tracker</span>
             </div>
             <div class="nav-buttons">
-                <a role="button" class="category-button" href="giving-awards.html">Начисление премии</a>
+                <a role="button" class="category-button" href="index-boss.html">Начисление премии</a>
                 <a role="button" class="category-button" href="deal-history-boss.html">История сделок</a>
                 <a role="button" class="category-button" href="rieltor-control.html">Управлени риелторами</a>
             </div>
             <div class="Block-deal">
                     <form action="http://denisGay.com" method="post">
-                        <div class="scroll-table" id="scroll">
+                        <div class="scroll-table">
                             <table>
                                 <thead>
                                 <tr>
                                     <th>Имя</th>
-                                    <th>Стаж</th>
-                                    <th>Сумма сделки</th>
-                                    <th>Тип сделки</th>
+                                    <th>ID сделки</th>
+                                    <th>Дата заключения договора</th>
+                                    <th>Адрес объекта</th>
+                                    <th>Тип</th>
+                                    <th>Сумма</th>
+                                    <th>Премия</th>
                                 </tr>
                                 </thead>
                             </table>
                                 <div class="scroll-table-body">
                                     <table>
                                         <tbody>
-                                            <tr>
-                                                <td>?=$deal[0]?></td> 
-                                                <td>?=$deal[1]?></td> 
-                                                <td>?=$deal[5]?></td> 
-                                                <td>?=$deal[4]?></td> 
-                                            </tr>
+                                          
                                         </tbody>
                                     </table>
                                 </div>
